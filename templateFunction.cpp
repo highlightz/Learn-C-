@@ -1,3 +1,5 @@
+// 演示函数模板的定义和模板函数的实例化
+
 #include <iostream>
 using namespace std;
 
