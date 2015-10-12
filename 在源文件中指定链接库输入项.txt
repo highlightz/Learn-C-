@@ -1,0 +1,16 @@
+直接在源程序文件中添加附加依赖项。
+假定已经设置了包含文件的路径和库文件的路径，只需在程序开头部分将库文件的名字按如下方式书写即可。
+#include <opencv2/opencv.hpp>
+
+#pragma comment( lib, "opencv_core249d.lib" )
+#pragma comment( lib, "opencv_highgui249d.lib" )
+
+int main( )
+{
+	cv::Mat img_mat;
+	img_mat.create( 480, 640, CV_8UC3 );
+	img_mat.setTo( cv::Scalar( 255, 0, 255 ) );
+	cv::imshow( "empty", img_mat );
+	cv::waitKey( );
+	return 0;
+}
