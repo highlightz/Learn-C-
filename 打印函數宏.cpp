@@ -8,6 +8,6 @@ int main( )
 {
     int j = 2;
     int i = 1;
-    PRINT( "j", j + i );
+    PRINT( "j + i", j + i );
     return 0;
 }
